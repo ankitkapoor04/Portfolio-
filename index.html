@@ -1,0 +1,601 @@
+<html>
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/all.css" rel="stylesheet" />
+</head>
+<style>
+  .to {
+    height: 60px;
+    background: var(--mycolor);
+
+  }
+
+  :root {
+    --mycolor: rgb(0, 0, 0);
+  }
+
+  .txt-mycolor {
+    color: var(--mycolor);
+  }
+
+
+
+  .left {
+    text-align: left;
+  }
+
+  .t1 {
+    box-shadow: 0px 0px 5px 5px #c2c1c1, 0px 0px 5px 5px #747474;
+    min-width: 200px;
+  }
+
+  .ht {
+    min-height: 500px;
+    background: #e0e0e0;
+  }
+
+  #ru {
+    max-height: 400px;
+    max-width: 400px;
+    border-radius: 170px;
+    background: rgb(224, 224, 224);
+    border: 2px solid black;
+    animation-name: abc;
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    transform: 2s;
+  }
+
+  @keyframes abc {
+    0% {
+      border-radius: 220px 260px 220px 260px;
+
+      border: 4px groove black;
+    }
+
+    25% {
+      border-radius: 260px 220px 260px 220px;
+
+      border: 4px groove black;
+
+    }
+    50% {
+      border-radius: 220px 300px 220px 300px;
+      border: 4px groove black;
+    }
+    100% {
+      border-radius: 300px 220px 300px 220px;
+      border: 4px groove rgb(0, 0, 0);
+    }
+  }
+  .icon {
+    font-size: 32px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    transition: all 1s;
+  }
+  .icon:hover {
+    transform: rotate(360deg);
+    transition: all 1s;
+    background: white;
+    color: #191590;
+  }
+  .hu {
+    min-height: 80px;
+    line-height: 80PX;
+  }
+  .ico {
+    font-size: 50px;
+    transition: all 0.3s;
+  }
+
+  .ico:hover {
+    transform: rotate(45deg);
+    transition: all 0.3s;
+  }
+  
+  .ic {
+             font-size: 30px;
+             margin: 12px;
+            animation-name: az;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            font-size: 92px;
+            margin: 0px 20px;
+
+        }
+
+        .ic:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes az {
+            from {
+                transform: rotate(0deg);
+
+
+            }
+
+            to {
+                transform: rotate(359deg);
+
+            }
+
+        }
+
+  #r {
+    background: green;
+    height: 395px;
+    width: 7px;
+    border: 2px groove yellow;
+    animation-name: abcd;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    float: left;
+  }
+
+  .t {
+    float: left;
+  }
+
+  @keyframes abcd {
+    0% {
+      background: purple;
+      border: 1px groove yellow;
+    }
+
+    20% {
+      background: rgb(91, 186, 57);
+      border: 2px groove yellow;
+    }
+
+    40% {
+      background: rgb(197, 97, 5);
+      border: 2px groove yellow;
+    }
+
+    60% {
+      background: rgb(11, 181, 223);
+      border: 2px groove yellow;
+    }
+
+    80% {
+      background: rgb(191, 12, 12);
+      border: 2px groove yellow;
+    }
+
+    100% {
+      background: rgb(255, 254, 255);
+      border: 2px groove yellow;
+
+    }
+  }
+
+  .rt {
+    height: 1px;
+    width: 644px;
+    background: white;
+    box-shadow: 0px 0px 15px 1px rgb(225, 225, 225);
+
+  }
+
+  .q1 {
+    font-size: 60px;
+    color: white;
+    filter: drop-shadow(1px 0px 3px rgb(2, 2, 2));
+
+  }
+
+
+
+ 
+
+  .top1 {
+   min-height: 800px;
+  
+    border: 0px 0px 2px 5px black;
+
+  }
+
+  .t2 {
+    height: 80px;
+    background: rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+  }
+
+  .t3 {
+    height: 190px;
+    background: rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+  }
+
+  .t4 {
+    height: 490px;
+    background: rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+  }
+
+  .t5 {
+    height: 500px;
+  }
+
+  
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+      background: red;
+    }
+
+    15% {
+      transform: translateY(-40px);
+      background: orange;
+    }
+
+    30% {
+      transform: translateY(0);
+      background: yellow;
+    }
+
+    45% {
+      transform: translateY(-40px);
+      background: green;
+    }
+
+    60% {
+      transform: translateY(0);
+      background: blue;
+    }
+
+    75% {
+      transform: translateY(-40px);
+      background: indigo;
+    }
+
+    90% {
+      transform: translateY(0);
+      background: violet;
+    }
+
+  }
+
+  #t3 {
+    width: 1200px;
+    height: 520px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  #left {
+    height: 460px;
+    width: 440px;
+    float: left;
+    background: var(--mycolor);
+    margin: 30px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .4);
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .txt {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+
+  .txta {
+    height: 80px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+
+  .btn {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background: white;
+  }
+  
+  .btn1 {
+    min-height: 40px;
+    margin-bottom: 15px;
+    
+    border: none;
+    background: white;
+  }
+
+
+  .test {
+            height: 120px;
+            width: 96%;
+        
+            align-items: center;
+            background: #e0e0e0;
+            box-shadow: rgb(190, 190, 190) 5px 5px 10px 0px inset, rgb(255, 255, 255) -5px -5px 10px 0px inset;
+            box-sizing: border-box;
+        }
+
+  .td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
+  }
+
+  .gt {
+
+    margin: 30px;
+    width: 380px;
+    border-radius: 10px;
+    min-height: 460px;
+    background: #e0e0e0;
+    box-shadow: 0px 0px 5px 5px #c2c1c1, 0px 0px 15px 10px white;
+  }
+  .gt1{
+    border-radius: 10px;
+
+    background: #e0e0e0;
+    box-shadow: rgb(184, 184, 184) 5px 5px 15px 0px , rgb(255, 255, 255) -5px -5px 10px 0px ;
+  }
+  .ht1{
+background: url(image/sr.jpg);
+background-attachment: fixed;
+  }
+  .skill {
+
+box-sizing: border-box;
+background: rgb(221, 219, 219);
+
+
+}
+
+.skillbr {
+box-shadow: rgb(184, 184, 184) 5px 5px 15px 0px, rgb(255, 255, 255) -5px -5px 10px 0px;
+box-sizing: border-box;
+background: #e0e0e0;
+border-radius: 25px;
+}
+
+.skillbtn {
+border-radius: 10px;
+box-shadow: rgb(184, 184, 184) 5px 5px 15px 0px, rgb(255, 255, 255) -5px -5px 10px 0px;
+padding: 10px;
+}
+
+.skillbtn:hover {
+box-shadow: rgb(172, 172, 172) 5px 5px 10px 0px inset, rgb(255, 255, 255) -5px -5px 10px 0px inset;
+}
+.yu{
+font-size: 40px;
+}
+</style>
+
+<body>
+  <div class="container-fluid ht1">
+    <div class="row header bg-color py-2 sticky-top" style="background :var(--mycolor); color: white;">
+      <div class="col-sm-4 ps-5 fs-2 logo text-light">
+          <div><b>Kapoor.AK</b></div>
+      </div>
+      <div class="col-sm-8 menus">
+          <!--start menu-->
+
+          <nav class="navbar navbar-expand-lg m-0 p-0 float-end" id="menu">
+              <div class="container-fluid">
+                  <!--<a class="navbar-brand fs-3" href="#"> <b style="padding-left: 50px;">Tushika.sri</b></a> -->
+                  <button class="navbar-toggler bg-light " type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item td">
+                              <a class="nav-link active text-light fs-4 ps-5" aria-current="page"
+                                  href="#"><b>Home</b></a>
+                          </li>
+                          <li class="nav-item td">
+                              <a class="nav-link text-light fs-4 ps-5" href="#proj1"><b>About</b></a>
+                          </li>
+                          <li class="nav-item td">
+                              <a class="nav-link text-light fs-4 ps-5" href="#proj"><b>Projects</b></a>
+                          </li>
+                          <li class="nav-item td">
+                              <a class="nav-link text-light fs-4 ps-5" href="#bv"><b>Contact</b></a>
+                          </li>
+                      </ul>
+
+                  </div>
+              </div>
+          </nav>
+          <!--end menu-->
+      </div>
+  </div>
+
+  
+    <div class="row ht ">
+      <div class="col-lg-2  col-sm-12  "></div>
+      <div class="col-lg-4 col-md-6 col-sm-12 pt-5 mt-3" style="font-family: Microsoft JhengHei Light"><b
+          class="q1">FULL STACK Developer <i class="fa-brands ico">👋</i></b><br><br>
+        <p style="font-size: 23px; text-align: justify; font-family: Arial, Helvetica, sans-serif;">Hi, I'm Ankit
+          kapoor. A Full Stack<br> Developer based in Kashmir,<br> Jammu and Kashmir</p>
+        <p><a href="https://www.linkedin.com/in/ankit-kapoor-322ab6253/"><i class="fa-brands fa-linkedin icon"></a></i>
+          <a href="https://github.com/ankitkapoor04/airlines_reservation_System"><i
+              class="fa-brands fa-github icon"></i></a> </p>
+      </div>
+      <div class="col-lg-4  col-md-6 col-sm-12  pt-5 mt-4 text-center"><img id="ru" src="image/11.jpeg" /></div>
+      <div class="col-lg-2 col-sm-12 p-3 "> </div>
+    </div>
+
+    <div class="row " style="height:100px">
+
+      <div class="col-lg-12 "style="background:#e0e0e0;min-height:150px; ">
+
+       <center> <div class="row test ">
+          <marquee direction="right" onmouseover="stop()" onmouseleave="start()">
+            <i class="fa-brands fa-html5 ic " ></i>
+            <i class="fa-brands fa-css3-alt ic" ></i>
+            <i class="fa-brands fa-js ic" ></i>
+            <i class="fa-brands fa-bootstrap ic"></i>
+            <i class="fa-brands fa-java ic"></i>
+            <i class="fa-brands fa-python ic"></i>
+            <i class="fa-solid fa-database ic"></i>
+          </marquee>
+        </div></center>
+      </div>
+
+
+    </div>
+  <br>
+  <div class="container ht1">
+      <div class="top1">
+        <div class="row t2">
+
+          <div class="col-lg-12  " id="proj1"
+            STYLE="text-align: center; font-size: 40px;margin-top: 30px;padding-left: 10px;">
+           <b style="color:white; filter:drop-shadow(1px 0px 2px rgb(0, 0, 0));"> ABOUT</b> <b style="color: black;">ME</b></div>
+          <div class="col-lg-5 col-sm-12"></div>
+        </div>
+        <div class="row t3">
+          <div class="col-lg-5 col-sm-12"></div>
+         <center> <div class="col-lg-2 col-md-6 col-sm-12"><img
+              style="height: 180px ; width: 180px; border-radius: 100px;border:2px groove rgb(0, 0, 0); background-size: cover;text-align: center;"
+              src="image/5.jpg"></div></center>
+          <div class="col-lg-5 col-sm-12"></div>
+        </div>
+       <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12  " style="min-height: 100px;font-size: 18px;text-align:justify ;" ><b>I'm a Frontend Developer based
+              in Lucknow who is passionate about delivering value to businesses through technology. I love the challenge
+              of finding creative solutions to problems, and I enjoy collaborating with teams to achieve great results.
+
+              I am dedicated to keeping up-to-date with the latest technologies and trends to provide the best solutions
+              for my clients.
+
+              I pay great attention to detail in the design and development of my projects. My ultimate goal is to
+              create software that is both user-friendly and impactful in achieving the client's objectives.</b></div>
+            <div class="col-lg-6 col-sm-12 gt" style="min-height: 100px;padding-left: 30px;">
+              <DIV><b style="color:white; filter:drop-shadow(1px 0px 2px rgb(0, 0, 0));font-size: 25px;">MY</b>&nbsp;  <b style="color: black;font-size: 25px;" >SKILL</b></b></DIV>
+
+            <button class="gt1" style="margin: 5px;">HTML</button>
+            <button class="gt1" style="margin: 5px;">CSS</button>
+            <button class="gt1" style="margin: 5px;"> JS</button><BR>
+            <button class="gt1" style="margin: 5px;">BOOTSTRAP</button>
+            <button class="gt1" style="margin: 5px;"> JQUERY</button>
+            <button class="gt1" style="margin: 5px;"> MYSQL</button><BR>
+            <button class="gt1" style="margin: 5px;"> PYTHON</button>
+            <button class="gt1" style="margin: 5px;"> JAVA</button>
+            <button class="gt1" style="margin: 5px;"> DJANGO</button>
+            </div>
+          </div>
+        </div>
+       </div><br>
+           <!--start tushi-->
+           <div class="row skill" id="skid PROJ">
+            <div class="text-center fs-1 mt-3" id="proj"><b style="color:white; filter:drop-shadow(1px 0px 2px rgb(0, 0, 0));">MY</b>&nbsp;<b>PROJECTS
+                </b></div>
+
+            <div class="col-md-4 col-sm-12 pro ">
+                <div class="row py-5 my-1">
+                    <div class="col-sm-1 "></div>
+                    <div class="col-sm-10 skillbr p-3 ">
+                        <div><img src="image/2.jpg" alt="" class="img-thumbnail"></div>
+                        <div style="text-align: justify;">
+                            <p style="font-size: 30px;text-align: center;">NEWS WEBSITE </p>
+                            <p>Hi! I am Ankit kapoor. A full-stack developer based in Lucknow, India.Hi!
+                                I am Ankit Kapoor. A full-stack developer based in Lucknow, India.Hi! I am Ankit kapoor.
+                                .</p>
+                        </div>
+                        <div class="row pt-3 pb-4">
+                            <div class="col-6"><a href="website.html" class="btn  float-start skillbtn" style="padding: 7px;">View Live</a>
+                            </div>
+                            <div class="col-6"> <a href="https://github.com/ankitkapoor04/newssite/upload" class="btn skillbtn float-end" style="padding: 5px;">View on Github</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 pro ">
+                <div class="row py-5 my-1">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10 skillbr p-3 ">
+                        <div><img src="image/8085986.jpg" alt="" class="img-thumbnail"></div>
+                        <div style="text-align: justify;">
+                            <p style="font-size: 30px;text-align: center;">DIGITAL WATCH </p>
+                            <p>Hi! I am Ankit Kapoor. A full-stack developer based in Lucknow, India.Hi!
+                                I am Ankit kapoor. A full-stack developer based in Lucknow, India.Hi! I am</p>
+                                </p>
+                        </div>
+                        <div class="row pt-3 pb-4">
+                            <div class="col-6"><a href="digitalclock.html" class="btn skillbtn float-start" style="padding: 7px;">View Live</a></div>
+                            <div class="col-6"> <a href="https://github.com/ankitkapoor04/digitalclock" class="btn skillbtn float-end" style="padding: 5px;">View on Github</a></div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 pro ">
+                <div class="row py-5 my-1">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10 skillbr p-3 ">
+                        <div><img src="image/1.jpg" alt="" class="img-thumbnail"></div>
+                        <div style="text-align: justify;">
+                            <p style="font-size: 30px;text-align: center;">10Min Zempto </p>
+                            <p>Hi! I am Ankit kapoor. A full-stack developer based in Lucknow, India.Hi!
+                                I am Ankit kapoor. A full-stack developer based in Lucknow, India.Hi! I am Ankit
+                                kapoor.
+                                </p>
+                        </div>
+                        <div class="row pt-3 pb-4">
+                            <div class="col-6"><a href="#" class="btn skillbtn float-start" style="padding: 7px;" ><p>View Live</p></a></div>
+                            <div class="col-6"> <a href="#" class="btn skillbtn float-end" style="padding: 5px;">View on Github</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+            </div>
+
+
+
+
+        
+        <!--end ankit-->
+<div class="row" id="bv">
+<div class="col-lg-12 col-sm-12 ">
+  <center>
+    <button style="border: none; border-radius: 50px;background: #dddbdb;">
+       <a href="mailto:ankitkapoor578@gmail.com" class="btn1 skillbtn float-start" style="margin: 20px;border-radius: 280px;"><img src="image/gt1.png" style="max-height:36px ;"/></a></button>
+    <button style="border: none;border-radius: 50px;background: #dddbdb;">
+       <a href="https://www.linkedin.com/in/ankit-kapoor-322ab6253/" class="btn1 skillbtn float-start" style="margin: 20px;border-radius: 150px;"><i class="fa-brands fa-linkedin yu"></i></a></button>
+    <button style="border: none;border-radius: 50px;background: #dddbdb;">
+       <a href="https://github.com/ankitkapoor04" class="btn1 skillbtn float-start" style="margin: 20px;border-radius: 150px;color: black;"><i class="fa-brands fa-github yu"></i></a></button></center>
+</div>
+</div></div><br>
+<script src="js/bootstrap.bundle.js"></script>
+      <div class="row bg-dark " style="width: 102%;color: white;">
+        <div class="col-12"><b>Copyright &#169; 2023 . All right reserved</b></div>
+      </div>
+</body>
+
+</html>
