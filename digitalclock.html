@@ -1,0 +1,59 @@
+<html>
+    <head></head>
+    <style>
+
+#top{
+    height: 350px;
+    width: 900px;
+    background: rgb(148, 148, 148);
+    border-radius: 80px;
+    border: 22px groove black;
+    box-sizing: border-box;
+    font-size: 240PX;
+    color: BLACK;
+    text-align: center;
+    margin: auto 500px;
+    box-shadow: 0px 0px 30px 35px rgb(165, 162, 162);
+    
+}
+.outer{
+    height: 300px;
+}
+.ty{
+    margin-left:520px;
+}
+.rt{  
+    height: 5px;
+    width: 423px;
+    float: left;
+    box-shadow: 0px 0px 5px 5px rgb(127, 127, 127);
+
+}
+.rt1{
+    width: 6px;
+    height: 50px;
+    float: left;
+}
+
+
+
+    </style>
+    <body>
+<div class="outer"></div>
+          <div>  <p id="top">10:30<B style="font-size: 22PX;">AM</B></p></div><br>
+<div class="ty"><div class="rt" style="text-align: center;font-size: 36px;"></div>
+<div class="rt1"></div>
+<div class="rt" style="text-align: center;font-size: 36px;"></div></div>
+        <script>
+            function demo(){
+                var x=document.querySelector("p")
+            var obj=new Date()
+            //document.write(`${obj.getDate()}`)
+           // document.write("Date : "+obj.getDate()+"/"+(obj.getMonth()+1)+"/"+obj.getFullYear())
+           //document.write(obj.getHours()+":"+obj.getMinutes()+":"+obj.getSeconds())
+           x.innerText=obj.getHours()+":"+obj.getMinutes()+":"+obj.getSeconds()
+            }
+            window.setInterval(demo,1000)
+        </script>
+    </body>
+</html>
