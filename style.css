@@ -1,0 +1,62 @@
+body{
+    align-items: center;
+    text-align: center;
+    animation: moveAndColorChange 5s infinite;
+}
+@keyframes moveAndColorChange {
+    0% {
+      transform: translate(0, 0);
+      background-color: rgb(203, 160, 160);
+    }
+    25% {
+      transform: translate(100px, 0);
+      background-color: rgb(173, 173, 94);
+    }
+    50% {
+      transform: translate(100px, 100px);
+      background-color: rgb(144, 248, 144);
+    }
+    75% {
+      transform: translate(0, 100px);
+      background-color: rgb(143, 143, 241);
+    }
+    100% {
+      transform: translate(0, 0);
+      background-color: rgb(247, 150, 150);
+    }
+  }
+.box{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border:12px solid black;
+    margin:2rem;
+
+}
+.flash{
+       background-color: white !important;
+
+}
+.userflash{
+    background-color: green !important;
+}
+.blue{
+    background-color: #819ff9;
+    color: #819ff9;
+}
+.yellow{
+    background-color: #f99b45;
+    color: #f99b45;
+}
+.orange{
+    background-color: #d95980;
+    color: #d95980;
+}
+.lightblue{
+    background-color: #63acc0;
+    color: #63acc0;
+}
+.game{
+    display: flex;
+    justify-content: center;
+}
