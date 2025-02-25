@@ -38,22 +38,30 @@
 
 
     </style>
-    <body>
-<div class="outer"></div>
-          <div>  <p id="top">10:30<B style="font-size: 22PX;">AM</B></p></div><br>
-<div class="ty"><div class="rt" style="text-align: center;font-size: 36px;"></div>
-<div class="rt1"></div>
-<div class="rt" style="text-align: center;font-size: 36px;"></div></div>
-        <script>
-            function demo(){
-                var x=document.querySelector("p")
-            var obj=new Date()
-            //document.write(`${obj.getDate()}`)
-           // document.write("Date : "+obj.getDate()+"/"+(obj.getMonth()+1)+"/"+obj.getFullYear())
-           //document.write(obj.getHours()+":"+obj.getMinutes()+":"+obj.getSeconds())
-           x.innerText=obj.getHours()+":"+obj.getMinutes()+":"+obj.getSeconds()
-            }
-            window.setInterval(demo,1000)
-        </script>
-    </body>
+   <body>
+    <div class="outer"></div>
+    <div>  
+        <p id="top">10:30<B style="font-size: 22PX;">AM</B></p>
+    </div>
+    <br>
+    <div class="ty">
+        <div class="rt" style="text-align: center; font-size: 36px;"></div>
+        <div class="rt1"></div>
+        <div class="rt" style="text-align: center; font-size: 36px;"></div>
+    </div>
+
+    <script>
+        function demo() {
+            var x = document.querySelector("p");
+            var obj = new Date(Date.now()); // Get the current time
+            var timeString = obj.toLocaleTimeString(); // Format as HH:MM:SS
+            x.innerText = timeString; 
+            console.log(obj.toLocaleTimeString);
+        }
+
+        setInterval(demo, 1000);
+        demo(); // Call once initially to show time immediately
+    </script>
+</body>
+
 </html>
