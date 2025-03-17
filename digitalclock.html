@@ -1,67 +1,81 @@
-<html>
-    <head></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Digital Clock</title>
     <style>
-
-#top{
-    height: 350px;
-    width: 900px;
-    background: rgb(148, 148, 148);
-    border-radius: 80px;
-    border: 22px groove black;
-    box-sizing: border-box;
-    font-size: 240PX;
-    color: BLACK;
-    text-align: center;
-    margin: auto 500px;
-    box-shadow: 0px 0px 30px 35px rgb(165, 162, 162);
-    
-}
-.outer{
-    height: 300px;
-}
-.ty{
-    margin-left:520px;
-}
-.rt{  
-    height: 5px;
-    width: 423px;
-    float: left;
-    box-shadow: 0px 0px 5px 5px rgb(127, 127, 127);
-
-}
-.rt1{
-    width: 6px;
-    height: 50px;
-    float: left;
-}
-
-
-
-    </style>
-   <body>
-    <div class="outer"></div>
-    <div>  
-        <p id="top">10:30<B style="font-size: 22PX;">AM</B></p>
-    </div>
-    <br>
-    <div class="ty">
-        <div class="rt" style="text-align: center; font-size: 36px;"></div>
-        <div class="rt1"></div>
-        <div class="rt" style="text-align: center; font-size: 36px;"></div>
-    </div>
-
-    <script>
-        function demo() {
-            var x = document.querySelector("p");
-            var obj = new Date(Date.now()); // Get the current time
-            var timeString = obj.toLocaleTimeString(); // Format as HH:MM:SS
-            x.innerText = timeString; 
-            console.log(obj.toLocaleTimeString);
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            text-align: center;
         }
-
-        setInterval(demo, 1000);
-        demo(); // Call once initially to show time immediately
+        #top {
+            background: rgb(148, 148, 148);
+            border-radius: 50px;
+            border: 12px groove black;
+            box-shadow: 0px 0px 20px 10px rgb(165, 162, 162);
+            font-size: 10vw;
+            color: black;
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+        }
+        .ty {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 80%;
+            max-width: 500px;
+            margin-top: 20px;
+        }
+        .rt {
+            height: 5px;
+            flex-grow: 1;
+            background: gray;
+            box-shadow: 0px 0px 5px 2px rgb(127, 127, 127);
+        }
+        .rt1 {
+            width: 10px;
+            height: 50px;
+            background: black;
+        }
+        @media (max-width: 600px) {
+            #top {
+                font-size: 15vw;
+            }
+            .rt1 {
+                height: 30px;
+                width: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p id="top">--:--</p>
+    <div class="ty">
+        <div class="rt"></div>
+        <div class="rt1"></div>
+        <div class="rt"></div>
+    </div>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12 || 12;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            document.getElementById("top").innerText = `${hours}:${minutes} ${ampm}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
     </script>
 </body>
-
 </html>

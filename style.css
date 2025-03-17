@@ -5,23 +5,23 @@ body{
 }
 @keyframes moveAndColorChange {
     0% {
-      transform: translate(0, 0);
+  
       background-color: rgb(203, 160, 160);
     }
     25% {
-      transform: translate(100px, 0);
+     
       background-color: rgb(173, 173, 94);
     }
     50% {
-      transform: translate(100px, 100px);
+    
       background-color: rgb(144, 248, 144);
     }
     75% {
-      transform: translate(0, 100px);
+     
       background-color: rgb(143, 143, 241);
     }
     100% {
-      transform: translate(0, 0);
+      
       background-color: rgb(247, 150, 150);
     }
   }
@@ -59,4 +59,13 @@ body{
 .game{
     display: flex;
     justify-content: center;
+}
+@media (max-width: 500px) {
+  .game {
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .box {
+      width: 100px;
+      height: 100px;
+  }
 }
